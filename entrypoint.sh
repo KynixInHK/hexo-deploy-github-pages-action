@@ -52,6 +52,8 @@ done
 
 echo ">_ Install NPM dependencies ..."
 npm install
+rm -rf node_modules/kramed/lib/rules/inline.js
+cp -rv dependencies/kramd/inline.js node_modules/kramed/lib/rules/
 
 echo ">_ Clean cache files ..."
 npx hexo clean
